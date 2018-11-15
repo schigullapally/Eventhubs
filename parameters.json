@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namespaceName": {
+      "value": "myeventhubnamespace"
+    },
+    "isAutoInflateEnabled": {
+      "value": "True"
+    },
+    "maximumThroughputUnits": {
+      "value": 15
+    },
+    "eventHubName": {
+      "value": "myeventhub"
+    },
+    "messageRetentionInDays": {
+      "value": 7
+    },
+    "partitionCount": {
+      "value": 16
+    },
+    "consumerGroupName": {
+      "value": "consumer1"
+    },
+    "namespaceAuthorizationRuleName": {
+      "value": "RootManageSharedAccessKey"
+    },
+    "eventhubAuthorizationRuleName": {
+      "value": "ManageSharedAccessKey1"
+    },
+    "eventhubAuthorizationRuleName1": {
+      "value": "ManageSharedAccessKey2"
+    }
+  }
+}
